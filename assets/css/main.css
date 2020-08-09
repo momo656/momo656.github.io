@@ -28,7 +28,17 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 body {
 	line-height: 1;
 }
