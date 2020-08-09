@@ -8,6 +8,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/momo656/momo656.github.io/master/images/pic8.png">
 	</head>
+	<style>
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
 	<body class="is-preload">
 
 		<!-- Nav -->
@@ -17,6 +30,9 @@
 					<li><a href="#work">Work</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li><h2>Toggle Dark/Light Mode</h2></li>
+                                         <button onclick="myFunction()">Toggle dark mode</button>
+
 				</ul>
 			</nav>
 <h2>Toggle Dark/Light Mode</h2>
@@ -41,7 +57,9 @@
 					</div>
 				</div>
 			</article>
-
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
 		<!-- Work -->
 			<article id="work" class="wrapper style2">
 				<div class="container">
@@ -50,10 +68,7 @@
 					<footer>
 						
 						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-						<h2>Toggle Dark/Light Mode</h2>
-                                                <p>Click the button to toggle between dark and light mode for this page.</p>
-
-<button onclick="myFunction()">Toggle dark mode</button>
+	
 					</footer>
 				</div>
 			</article>
