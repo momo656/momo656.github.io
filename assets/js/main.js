@@ -6,6 +6,11 @@
 
 (function($) {
 
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+
 	var	$window = $(window),
 		$body = $('body'),
 		$nav = $('#nav');
